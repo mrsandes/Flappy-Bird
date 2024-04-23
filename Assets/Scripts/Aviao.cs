@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Aviao : MonoBehaviour {
-    Rigidbody2D fisica;
+    private Rigidbody2D fisica;
+    [SerializeField]private float forca = 5;
 
     private void Awake() {
         this.fisica = this.GetComponent<Rigidbody2D>();
@@ -16,6 +17,6 @@ public class Aviao : MonoBehaviour {
     }
     
     private void Impulsionar() {
-        this.fisica.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+        this.fisica.AddForce(Vector2.up * forca, ForceMode2D.Impulse);
     }
 }
