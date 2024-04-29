@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Carrosel : MonoBehaviour {
-    [SerializeField]private float velocidade = 10f;
+    [SerializeField] private float velocidade = 10f;
 
     private Vector3 posicaoInicial;
     private float tamanhoRealDaImagem;

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Obstaculo : MonoBehaviour {
-    [SerializeField]private float velocidade = 5f;
-    [SerializeField]private float variacaoDaPosicaoY;
+    [SerializeField] private float velocidade = 5f;
+    [SerializeField] private float variacaoDaPosicaoY;
 
     private void Awake() {
         this.transform.Translate(Vector3.up * Random.Range(-variacaoDaPosicaoY, variacaoDaPosicaoY));
@@ -18,7 +18,7 @@ public class Obstaculo : MonoBehaviour {
         this.Destruir();
     }
 
-    private void Destruir() {
+    public void Destruir() {
         GameObject.Destroy(this.gameObject);
     }
 }

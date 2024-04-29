@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GeradorDeObstaculos : MonoBehaviour {
-    [SerializeField]private float tempoParaGerar;
-    [SerializeField]private GameObject manualDeInstrucoes;
+    [SerializeField] private float tempoParaGerar;
+    [SerializeField] private GameObject manualDeInstrucoes;
     private float cronometro;
 
     private void awake() {
